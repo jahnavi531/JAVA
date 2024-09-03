@@ -1,16 +1,19 @@
 class Test{
-    int a=100;
-    int b=200;
-    static int c=300;
-        public static void main(String[] args){
-            Test t1 = new Test();
-            Test t2 = new Test();
-            t2.b = 20;
-            System.out.println(t1.a+t1.b+t1.c);
-            System.out.println(t2.a+t2.b+t2.c);
-            t1.c = 30;  
-            System.out.println(t1.a+t1.b+t1.c);
-            System.out.println(t2.a+t2.b+t2.c);
+    static int x=100;
+    int y=200;
+    public static void main(String[] args){
+        Test t = new Test();
+        t.call(x:300);
+    }
+    public void call(int x){
+        System.out.println(x);
+        Test t = new Test();
+        this.x = 101;
+        y = 201;
+        System.out.println(y);
+         System.out.println(Test.x);
+         System.out.println(t.x);
+         System.out.println(t.y);  
 
-        }
+    }
 }
