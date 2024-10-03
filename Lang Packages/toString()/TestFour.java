@@ -1,6 +1,6 @@
 
  class B {
-    public String toString(){           //OVERriding tostring helps to meaningful statement
+    public String toString(){           //Overriding tostring helps to meaningful statement
         return "Rahul";
     }
         public static void main(String[] args) {
